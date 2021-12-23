@@ -1,4 +1,3 @@
-
 $(function() {
   var containerHeight = $(".owl-carousel").height();
   $(".owl-carousel").find("img").each(function(index, img) {
