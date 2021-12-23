@@ -1,5 +1,5 @@
 import { allAssetNames } from '../assetFileNames.js';
-const doggoName = 'Lucky'; 
+const doggoName = 'Leo'; 
 
 let getVideoPath = function(name, fileName) {
 
