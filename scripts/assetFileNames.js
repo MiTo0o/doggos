@@ -36,11 +36,17 @@ const luckyVidNames = [
   'luckyVID2.mp4'
 ];
 
-export const allAssetNames = [
-  brownImgNames,
-  brownVidNames,
-  leoImgNames,
-  leoVidNames,
-  luckyImgNames,
-  luckyVidNames
-];
+export const allAssetNames = {
+  'Brownie': {
+    'imgs': brownImgNames,
+    'vids': brownVidNames
+  },
+  'Leo': {
+    'imgs': leoImgNames,
+    'vids': leoVidNames
+  },
+  'Lucky': {
+    'imgs': luckyImgNames,
+    'vids': luckyVidNames
+  }
+};

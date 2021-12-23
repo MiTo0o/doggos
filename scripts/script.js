@@ -1,8 +1,36 @@
 import { allAssetNames } from './assetFileNames.js';
-console.log(allAssetNames);
+
+let getVideoPath = function(name, fileName) {
+
+  return `<div><video controls><source src="assets/doggos/${name}/${fileName}"></video></div>`;
+
+}
+
+let getImgPath = function(name, fileName) {
+
+  return `<div class="item"><img src="assets/doggos/${name}/${fileName}"></div>`;
+
+}
+
+let yaboi = []
+for (const dog of Object.keys(allAssetNames)) {
+  for (const key of Object.keys(allAssetNames[dog])) {
+    for (let i = 0; i < allAssetNames[dog][key].length; i++) {
+      if (key === "imgs") {
+        yaboi.push(getImgPath(dog, allAssetNames[dog][key][i]))
+      } else {
+        yaboi.push(getVideoPath(dog, allAssetNames[dog][key][i]))
+      }
+    }
+  }
+}
+
+for (let i = 0; i < yaboi.length; i++) {
+  $("#main-slider").append(yaboi[i]);
+}
 
 $(function() {
-  
+
 
 
 
