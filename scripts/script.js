@@ -12,6 +12,15 @@ let getImgPath = function(name, fileName) {
 
 }
 
+// some sort of Durstenfeld shuffle idk, https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+let shuffleArray = function(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+
 let yaboi = []
 for (const dog of Object.keys(allAssetNames)) {
   for (const key of Object.keys(allAssetNames[dog])) {
@@ -25,7 +34,8 @@ for (const dog of Object.keys(allAssetNames)) {
   }
 }
 
-// randomize array before appending would prob be good
+shuffleArray(yaboi)
+
 for (let i = 0; i < yaboi.length; i++) {
   $("#main-slider").append(yaboi[i]);
 }
