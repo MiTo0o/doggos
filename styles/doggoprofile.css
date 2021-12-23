@@ -4,7 +4,10 @@
 
 body {
   margin: 0;
+  background-color: #292929;
   font-family: Arial;
+  color: #fff;
+  opacity: 0.86;
 }
 
 .header {
@@ -33,6 +36,11 @@ body {
   vertical-align: middle;
   width: 100%;
 }
+.column video {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -40,5 +48,12 @@ body {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }

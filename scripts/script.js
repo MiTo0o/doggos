@@ -2,7 +2,7 @@ import { allAssetNames } from './assetFileNames.js';
 
 let getVideoPath = function(name, fileName) {
 
-  return `<div><video controls><source src="assets/doggos/${name}/${fileName}"></video></div>`;
+  return `<div class="item"><video controls><source src="assets/doggos/${name}/${fileName}"></video></div>`;
 
 }
 
@@ -70,7 +70,7 @@ $(function() {
     loop: true,
     nav: true,
     autoplay:true,
-    autoplayTimeout:1500,
+    autoplayTimeout:1750,
     autoplayHoverPause:true
   });
 });
