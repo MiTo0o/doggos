@@ -1,3 +1,4 @@
+
 $(function() {
   var containerHeight = $(".owl-carousel").height();
   $(".owl-carousel").find("img").each(function(index, img) {
@@ -25,6 +26,5 @@ $(function() {
     autoplay:true,
     autoplayTimeout:1500,
     autoplayHoverPause:true
-
   });
 });

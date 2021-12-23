@@ -2,11 +2,6 @@ body{
   background-color: #292929;
 }
 
-.mainslider {
-  display: flex;
-}
-
-
 #title-div {
   display: flex;
   color: #fff;
@@ -14,13 +9,6 @@ body{
   opacity: 0.86;
   width:100%;
 }
-
-
-
-
-
-
-
 
 .owl-stage {
   display: -webkit-box;
