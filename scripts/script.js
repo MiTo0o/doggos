@@ -1,3 +1,5 @@
+import { allAssetNames } from './assetFileNames.js';
+console.log(allAssetNames);
 
 $(function() {
   var containerHeight = $(".owl-carousel").height();
