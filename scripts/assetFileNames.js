@@ -22,13 +22,13 @@ const leoVidNames = [
 ];
 
 const luckyImgNames = [
-  'luck1.jpg',
-  'luck2.jpg',
-  'luck3.jpg',
-  'luck4.jpg',
-  'luck5.jpg',
-  'luck6.jpg',
-  'luck7.jpg'
+  'lucky1.jpg',
+  'lucky2.jpg',
+  'lucky3.jpg',
+  'lucky4.jpg',
+  'lucky5.jpg',
+  'lucky6.jpg',
+  'lucky7.jpg'
 ];
 
 const luckyVidNames = [
