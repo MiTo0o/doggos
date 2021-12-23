@@ -25,6 +25,7 @@ for (const dog of Object.keys(allAssetNames)) {
   }
 }
 
+// randomize array before appending would prob be good
 for (let i = 0; i < yaboi.length; i++) {
   $("#main-slider").append(yaboi[i]);
 }
