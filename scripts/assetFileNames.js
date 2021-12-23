@@ -1,4 +1,4 @@
-const brownImgNames = [
+const brownieImgNames = [
   'brownie1.jpg',
   'brownie2.jpg',
   'brownie3.jpg',
@@ -9,7 +9,7 @@ const brownImgNames = [
   'brownie8.jpg'
 ];
 
-const brownVidNames = [
+const brownieVidNames = [
   'brownieVID1.mp4'
 ];
 
@@ -38,8 +38,8 @@ const luckyVidNames = [
 
 export const allAssetNames = {
   'Brownie': {
-    'imgs': brownImgNames,
-    'vids': brownVidNames
+    'imgs': brownieImgNames,
+    'vids': brownieVidNames
   },
   'Leo': {
     'imgs': leoImgNames,
