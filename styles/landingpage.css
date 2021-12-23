@@ -1,6 +1,27 @@
 body{
   background-color: #292929;
 }
+
+.mainslider {
+  display: flex;
+}
+
+
+#title-div {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  opacity: 0.86;
+  width:100%;
+}
+
+
+
+
+
+
+
+
 .owl-stage {
   display: -webkit-box;
   display: -moz-box;
@@ -9,7 +30,7 @@ body{
 }
 
 .owl-carousel {
-  height: 600px;
+  height: 400px;
 }
 
 .owl-theme .owl-dots .owl-dot span{
