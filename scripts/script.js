@@ -69,7 +69,19 @@ $(function() {
     items: 3,
     loop: true,
     nav: true,
-    autoplay:true,
+    navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    },
+    autoplay: true,
     autoplayTimeout:1750,
     autoplayHoverPause:true
   });

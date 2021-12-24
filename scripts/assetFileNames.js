@@ -50,3 +50,9 @@ export const allAssetNames = {
     'vids': luckyVidNames
   }
 };
+
+export const profilePicNames = {
+  'Brownie': 'Brownie.jpg',
+  'Leo': 'Leo.jpg',
+  'Lucky': 'Lucky.jpg'
+};
