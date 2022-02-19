@@ -1,6 +1,12 @@
 import React from 'react';
 import './Home.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
+
 function Home() {
   return(
   <div class="home-page">
@@ -14,7 +20,9 @@ function Home() {
 
     </div>
     <footer class="home-footer">
-      sheeesh
+      <FontAwesomeIcon icon={faGithub}/>
+      <FontAwesomeIcon icon={faLinkedin}/>
+      <FontAwesomeIcon icon={faEnvelope}/>
     </footer>
   </div>
   );
