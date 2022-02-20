@@ -1,0 +1,16 @@
+.home-footer {
+  text-align:center;
+  a{
+    color:#fff;
+    font-size:2em;
+    margin: 50px
+  }
+
+  a:hover {
+    color:gray;
+  }
+
+  position: absolute;
+  padding-bottom: 30px;
+  bottom: 0;
+}
