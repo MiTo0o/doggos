@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 
-import Footer from '../components/Footer.jsx';
+import Footer from '../components/Footer/Footer.jsx';
 
 function Home() {
   return(
