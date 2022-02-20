@@ -6,11 +6,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
 
 function Footer() {
-  <footer>
-    <FontAwesomeIcon icon={faGithub}/>
-    <FontAwesomeIcon icon={faLinkedin}/>
-    <FontAwesomeIcon icon={faEnvelope}/>
-  </footer>
+  return(
+    <footer  className="home-footer">
+      <FontAwesomeIcon icon={faGithub}/>
+      <FontAwesomeIcon icon={faLinkedin}/>
+      <FontAwesomeIcon icon={faEnvelope}/>
+    </footer>
+  )
+
 }
 
 export default Footer;
