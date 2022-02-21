@@ -1,35 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
 
-.text {
-  padding-bottom: 30px;
-}
-.title {
-  font-size: 150px;
-  font-family: 'Dancing Script', cursive;
-  padding-bottom: 30px;
+.center-container {
+
+  .title {
+    font-size: 150px;
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 30px;
+  }
+
+  .text {
+    padding-bottom: 30px;
+  }
+
+  .home-button-container {
+
+    .about-button{
+      margin-right:10px
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      transition: all .5s ease;
+      color: #fff;
+      border: 1px solid white;
+      font-family:'Montserrat', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1;
+      background-color : transparent;
+      outline: none;
+      border-radius: 290px;
+    
+    }
+    
+    button:hover {
+      color: #001F3F;
+      background-color: #fff;
+    }
+  }
 }
 
-.about-button{
-  margin-right:10px
-}
-
-button {
-  padding: 15px 30px;
-  font-size: 20px;
-  transition: all .5s ease;
-  color: #fff;
-  border: 1px solid white;
-  font-family:'Montserrat', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1;
-  background-color : transparent;
-  outline: none;
-  border-radius: 290px;
-
-}
-
-button:hover {
-  color: #001F3F;
-  background-color: #fff;
-}
