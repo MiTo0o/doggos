@@ -9,16 +9,16 @@ import GalleryProfileList from '../../components/GalleryProfile/GalleryProfileLi
 
 
 function Galleries() {
-  const lightTheme = createTheme({
+  const darkTheme = createTheme({
     palette: {
-      mode: "light",
+      mode: "dark",
     },
   });
   return (
-    <ThemeProvider theme={lightTheme}>
-    <CssBaseline />
-    <GalleryProfileList />
-  </ThemeProvider>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <GalleryProfileList />
+    </ThemeProvider>
   );
 };
 
