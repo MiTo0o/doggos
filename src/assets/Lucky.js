@@ -1,4 +1,4 @@
-export const lucky = [
+export const Lucky = [
   {
     src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
     width: 4,

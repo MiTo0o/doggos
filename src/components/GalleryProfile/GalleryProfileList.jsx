@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { lucky } from "../../assets/lucky";
+import { Lucky } from "../../assets/Lucky";
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -51,13 +51,13 @@ function GalleryProfileList(props) {
         </AppBar>
       </div>
 
-      <Gallery photos={lucky} onClick={openLightbox} />
+      <Gallery photos={Lucky} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={lucky.map((x) => ({
+              views={Lucky.map((x) => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title,
