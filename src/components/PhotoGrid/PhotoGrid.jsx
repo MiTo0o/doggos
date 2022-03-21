@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
-function GalleryProfileList(props) {
+function PhotoGrid(props) {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -69,4 +69,4 @@ function GalleryProfileList(props) {
     </div>
   );
 }
-export default GalleryProfileList;
+export default PhotoGrid;

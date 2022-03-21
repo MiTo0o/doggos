@@ -3,9 +3,9 @@ import React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-import "./Galleries.scss";
+import "./Gallery.scss";
 
-import GalleryProfileList from "../../components/GalleryProfile/GalleryProfileList";
+import PhotoGrid from "../../components/PhotoGrid/PhotoGrid";
 
 function Galleries() {
   const darkTheme = createTheme({
@@ -16,7 +16,7 @@ function Galleries() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <GalleryProfileList />
+      <PhotoGrid />
     </ThemeProvider>
   );
 }
