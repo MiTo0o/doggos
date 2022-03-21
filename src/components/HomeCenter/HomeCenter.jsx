@@ -13,7 +13,7 @@ function HomeCenter() {
             About
           </button>
         </Link>
-        <Link to="/gallery">
+        <Link to="/galleries">
           <button type="button">Galleries</button>
         </Link>
       </div>
