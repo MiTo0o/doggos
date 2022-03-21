@@ -8,9 +8,9 @@ function HomeCenter() {
       <h1 className="title">Doggos</h1>
       <p className="text">Check out deez doggos</p>
       <div className="home-button-container">
-        <button className="about-button" type="button">
-          About
-        </button>
+        <Link to="/about">
+          <button className="about-button" type="button">About</button>
+        </Link>
         <Link to="/gallery">
           <button type="button">Galleries</button>
         </Link>
