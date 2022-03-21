@@ -1,5 +1,5 @@
 export const Miscellaneous = {
-  title: 'Miscellaneous',
+  title: "Miscellaneous",
   imgList: [
     {
       src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
@@ -46,5 +46,5 @@ export const Miscellaneous = {
       width: 4,
       height: 3,
     },
-  ]
+  ],
 };

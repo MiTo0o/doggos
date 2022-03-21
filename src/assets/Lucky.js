@@ -1,5 +1,5 @@
 export const Lucky = {
-  title: 'Lucky',
+  title: "Lucky",
   imgList: [
     {
       src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
@@ -46,5 +46,5 @@ export const Lucky = {
       width: 4,
       height: 3,
     },
-  ]
+  ],
 };

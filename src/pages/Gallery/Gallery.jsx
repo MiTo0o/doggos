@@ -19,12 +19,10 @@ function Galleries() {
     return (
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
-        <PhotoGrid dogData={allGalleries[galleryName]}/>
+        <PhotoGrid dogData={allGalleries[galleryName]} />
       </ThemeProvider>
     );
   }
-
-
 }
 
 export default Galleries;

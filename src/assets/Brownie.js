@@ -1,5 +1,5 @@
 export const Brownie = {
-  title: 'Brownie',
+  title: "Brownie",
   imgList: [
     {
       src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
@@ -46,5 +46,5 @@ export const Brownie = {
       width: 4,
       height: 3,
     },
-  ]
+  ],
 };
