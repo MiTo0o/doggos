@@ -13,7 +13,7 @@ const profileData = [
     title: "Leo",
     profilePicUrl:
       "https://raw.githubusercontent.com/MiTo0o/doggos-static/main/Leo/profile.jpg",
-  }
+  },
 ];
 
 export default profileData;

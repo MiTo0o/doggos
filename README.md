@@ -9,6 +9,3 @@ In the project directory, you can run:
 ### Galleries
 
 All the gallery profiles have a profile picture with a 3:2 ratio
-
-
-
