@@ -5,7 +5,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import ProfileList from "../../components/Profile/ProfileList";
 import "./Profiles.scss";
 
-
 function Galleries() {
   const darkTheme = createTheme({
     palette: {

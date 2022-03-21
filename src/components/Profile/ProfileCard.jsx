@@ -24,7 +24,6 @@ import Grid from "@mui/material/Grid";
 // i cri ;(
 
 function ProfileCard({ profileData }) {
-  
   /* From 0 to 600px wide (smart-phones), I take up 12 columns, or the whole device width!
 From 600-690px wide (tablets), I take up 6 out of 12 columns, so 2 columns fit the screen.
 From 960px wide and above, I take up 25% of the device (4/12), so 3 columns fit the screen. */
