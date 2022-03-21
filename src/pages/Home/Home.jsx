@@ -1,12 +1,11 @@
-import React from 'react';
-import './Home.scss';
-import HomeCenter from '../../components/HomeCenter/HomeCenter';
-
+import React from "react";
+import "./Home.scss";
+import HomeCenter from "../../components/HomeCenter/HomeCenter";
 
 function Home() {
-  return(
+  return (
     <div className="home-page">
-      <HomeCenter/>
+      <HomeCenter />
     </div>
   );
 }
