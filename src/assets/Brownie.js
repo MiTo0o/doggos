@@ -1,5 +1,5 @@
-export const Lucky = {
-  title: 'Lucky',
+export const Brownie = {
+  title: 'Brownie',
   imgList: [
     {
       src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",

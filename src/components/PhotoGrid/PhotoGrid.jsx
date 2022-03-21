@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { Lucky } from "../../assets/Lucky";
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -10,7 +9,7 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
-function PhotoGrid(props) {
+function PhotoGrid({ dogData }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -44,23 +43,30 @@ function PhotoGrid(props) {
                 textAlign: "center",
               }}
             >
-              {props.title}
+              {dogData.title}
             </Typography>
             <Button color="inherit">Home</Button>
           </Toolbar>
         </AppBar>
       </div>
-
-      <Gallery photos={Lucky} onClick={openLightbox} />
+      <Typography
+        variant="h3"
+        paragraph
+        style={{ textAlign: "center" }}
+        sx={{ my: 4 }}
+      >
+        {dogData.title}
+      </Typography>
+      <Gallery photos={dogData.imgList} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={Lucky.map((x) => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title,
+              views={dogData.imgList.map((imgData) => ({
+                ...imgData,
+                srcset: imgData.srcSet,
+                caption: imgData.title,
               }))}
             />
           </Modal>
