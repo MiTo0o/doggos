@@ -3,16 +3,14 @@ import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { lucky } from "../../assets/lucky";
 
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function GalleryProfileList(props) {
-
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -28,17 +26,22 @@ function GalleryProfileList(props) {
 
   return (
     <div>
-      <div sx={{flexGrow: 1}}>
+      <div sx={{ flexGrow: 1 }}>
         <AppBar position="static">
           <Toolbar>
-            <IconButton edge="start" sx={{mr: 5}} color="inherit" aria-label="menu">
+            <IconButton
+              edge="start"
+              sx={{ mr: 5 }}
+              color="inherit"
+              aria-label="menu"
+            >
               <MenuIcon />
             </IconButton>
             <Typography
               variant="h6"
               sx={{
                 flexGrow: 1,
-                textAlign:'center'
+                textAlign: "center",
               }}
             >
               {props.title}
@@ -54,10 +57,10 @@ function GalleryProfileList(props) {
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={lucky.map(x => ({
+              views={lucky.map((x) => ({
                 ...x,
                 srcset: x.srcSet,
-                caption: x.title
+                caption: x.title,
               }))}
             />
           </Modal>

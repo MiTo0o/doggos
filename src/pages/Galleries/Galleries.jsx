@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-import './Galleries.scss';
+import "./Galleries.scss";
 
-import GalleryProfileList from '../../components/GalleryProfile/GalleryProfileList';
-
+import GalleryProfileList from "../../components/GalleryProfile/GalleryProfileList";
 
 function Galleries() {
   const darkTheme = createTheme({
@@ -20,6 +19,6 @@ function Galleries() {
       <GalleryProfileList />
     </ThemeProvider>
   );
-};
+}
 
 export default Galleries;
