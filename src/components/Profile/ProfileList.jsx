@@ -17,7 +17,7 @@ function ProfileList() {
         style={{ textAlign: "center" }}
         sx={{ my: 4 }}
       >
-        Projects
+        Galleries
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         {profileData.map((profile) => (
