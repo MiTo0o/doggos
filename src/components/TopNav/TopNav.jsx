@@ -4,8 +4,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import HomeIcon from '@mui/icons-material/Home';
-
+import HomeIcon from "@mui/icons-material/Home";
 
 import pawPrintLogo from "../../assets/logos/paw-print.svg";
 import NestedMenu from "../NestedMenu/NestedMenu";

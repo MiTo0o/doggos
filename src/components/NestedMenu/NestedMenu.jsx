@@ -7,9 +7,9 @@ import { NestedMenuItem } from "mui-nested-menu";
 import { MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import { IconMenuItem } from "mui-nested-menu";
-import PetsIcon from '@mui/icons-material/Pets';
-import HomeIcon from '@mui/icons-material/Home';
-import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
+import PetsIcon from "@mui/icons-material/Pets";
+import HomeIcon from "@mui/icons-material/Home";
+import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
 function NestedMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -18,39 +18,44 @@ function NestedMenu() {
   const handleClose = () => setAnchorEl(null);
   return (
     <div>
-      <Button size="large" onClick={handleClick} endIcon={<MenuIcon />} color="inherit">
+      <Button
+        size="large"
+        onClick={handleClick}
+        endIcon={<MenuIcon />}
+        color="inherit"
+      >
         Menu
       </Button>
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
         <IconMenuItem
           onClick={handleClose}
           leftIcon={<HomeIcon />}
-          label={'Home'}
+          label={"Home"}
         />
         <NestedMenuItem
           leftIcon={<PhotoLibraryIcon />}
-          label={'Galleries'}
+          label={"Galleries"}
           parentMenuOpen={open}
         >
           <Link
-            to='/gallery/Leo'
+            to="/gallery/Leo"
             style={{ textDecoration: "none", color: "white" }}
           >
             <IconMenuItem
               onClick={handleClose}
               leftIcon={<PetsIcon />}
-              label={'Leo'}
+              label={"Leo"}
             />
           </Link>
           <IconMenuItem
             onClick={handleClose}
             leftIcon={<PetsIcon />}
-            label={'Lucky'}
+            label={"Lucky"}
           />
           <IconMenuItem
             onClick={handleClose}
             leftIcon={<PetsIcon />}
-            label={'Brownie'}
+            label={"Brownie"}
           />
         </NestedMenuItem>
       </Menu>
