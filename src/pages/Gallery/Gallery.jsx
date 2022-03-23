@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import "./Gallery.scss";
 import TopNav from "../../components/TopNav/TopNav";
 import PhotoGrid from "../../components/PhotoGrid/PhotoGrid";
+import Home from "../Home/Home"
 
 function Galleries() {
   let { galleryName } = useParams();
@@ -23,6 +24,10 @@ function Galleries() {
         <PhotoGrid dogData={allGalleries[galleryName]} />
       </ThemeProvider>
     );
+  } else {
+    return (
+      <Home />
+    )
   }
 }
 

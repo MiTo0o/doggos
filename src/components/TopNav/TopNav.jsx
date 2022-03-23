@@ -9,6 +9,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import pawPrintLogo from "../../assets/logos/paw-print.svg";
 import NestedMenu from "../NestedMenu/NestedMenu";
 
+import { Link } from "react-router-dom";
 function TopNav() {
   return (
     <div sx={{ flexGrow: 1 }}>
@@ -24,9 +25,14 @@ function TopNav() {
           >
             <img src={pawPrintLogo} className="App-logo" alt="paw-print-logo" />
           </Typography>
-          <Button size="large" endIcon={<HomeIcon />} color="inherit">
-            Home
-          </Button>
+          <Link
+            to="/"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button size="large" endIcon={<HomeIcon />} color="inherit">
+              Home
+            </Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>

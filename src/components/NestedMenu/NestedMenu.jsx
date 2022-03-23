@@ -10,6 +10,8 @@ import { IconMenuItem } from "mui-nested-menu";
 import PetsIcon from "@mui/icons-material/Pets";
 import HomeIcon from "@mui/icons-material/Home";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
+
+import profileData from "../../galleryData/profileData";
 function NestedMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -27,36 +29,36 @@ function NestedMenu() {
         Menu
       </Button>
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-        <IconMenuItem
-          onClick={handleClose}
-          leftIcon={<HomeIcon />}
-          label={"Home"}
-        />
+        <Link
+          to="/"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <IconMenuItem
+            onClick={handleClose}
+            leftIcon={<HomeIcon />}
+            label={"Home"}
+          />
+        </Link>
         <NestedMenuItem
           leftIcon={<PhotoLibraryIcon />}
           label={"Galleries"}
           parentMenuOpen={open}
         >
-          <Link
-            to="/gallery/Leo"
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            <IconMenuItem
-              onClick={handleClose}
-              leftIcon={<PetsIcon />}
-              label={"Leo"}
-            />
-          </Link>
-          <IconMenuItem
-            onClick={handleClose}
-            leftIcon={<PetsIcon />}
-            label={"Lucky"}
-          />
-          <IconMenuItem
-            onClick={handleClose}
-            leftIcon={<PetsIcon />}
-            label={"Brownie"}
-          />
+          {profileData.map((dog) => {
+            const relativeLinkUrl = `/gallery/${dog.title}`
+            return(
+              <Link
+                to={relativeLinkUrl}
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <IconMenuItem
+                  onClick={handleClose}
+                  leftIcon={<PetsIcon />}
+                  label={dog.title}
+                />
+              </Link>
+            )
+          })}
         </NestedMenuItem>
       </Menu>
     </div>
