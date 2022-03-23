@@ -25,10 +25,7 @@ function TopNav() {
           >
             <img src={pawPrintLogo} className="App-logo" alt="paw-print-logo" />
           </Typography>
-          <Link
-            to="/"
-            style={{ textDecoration: "none", color: "white" }}
-          >
+          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             <Button size="large" endIcon={<HomeIcon />} color="inherit">
               Home
             </Button>

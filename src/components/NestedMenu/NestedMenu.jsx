@@ -29,10 +29,7 @@ function NestedMenu() {
         Menu
       </Button>
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-        <Link
-          to="/"
-          style={{ textDecoration: "none", color: "white" }}
-        >
+        <Link to="/" style={{ textDecoration: "none", color: "white" }}>
           <IconMenuItem
             onClick={handleClose}
             leftIcon={<HomeIcon />}
@@ -45,8 +42,8 @@ function NestedMenu() {
           parentMenuOpen={open}
         >
           {profileData.map((dog) => {
-            const relativeLinkUrl = `/gallery/${dog.title}`
-            return(
+            const relativeLinkUrl = `/gallery/${dog.title}`;
+            return (
               <Link
                 to={relativeLinkUrl}
                 style={{ textDecoration: "none", color: "white" }}
@@ -57,7 +54,7 @@ function NestedMenu() {
                   label={dog.title}
                 />
               </Link>
-            )
+            );
           })}
         </NestedMenuItem>
       </Menu>
