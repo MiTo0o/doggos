@@ -11,7 +11,8 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 function Footer() {
   return (
     <footer className="home-footer">
-      <a href="https://github.com/MiTo0o/doggos"
+      <a
+        href="https://github.com/MiTo0o/doggos"
         target="_blank"
         rel="noreferrer"
       >

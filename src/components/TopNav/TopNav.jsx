@@ -7,13 +7,9 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
-import pawPrintLogo from '../../assets/logos/paw-print.svg';
-
-
+import pawPrintLogo from "../../assets/logos/paw-print.svg";
 
 function TopNav() {
-
-
   return (
     <div sx={{ flexGrow: 1 }}>
       <AppBar position="static">
