@@ -2,15 +2,19 @@ import React from "react";
 import "./Footer.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
+// footer icons
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 
 function Footer() {
   return (
     <footer className="home-footer">
-      <a href="https://github.com/MiTo0o" target="_blank" rel="noreferrer">
+      <a href="https://github.com/MiTo0o/doggos"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FontAwesomeIcon icon={faGithub} />
       </a>
       <a

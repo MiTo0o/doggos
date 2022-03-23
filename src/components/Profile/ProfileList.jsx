@@ -5,7 +5,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 
-import profileData from "../../assets/profileData";
+import profileData from "../../galleryData/profileData";
 import ProfileCard from "./ProfileCard";
 
 function ProfileList() {
