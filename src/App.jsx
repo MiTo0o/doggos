@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* page not found */}
-        {/* <Route path="*" element={<PageNotFound />} /> */}
+        <Route path="*" element={<Home />} />
 
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
