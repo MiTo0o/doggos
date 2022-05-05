@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
-import InfoIcon from '@mui/icons-material/Info';
+import InfoIcon from "@mui/icons-material/Info";
 import { Menu } from "@mui/material";
 import { NestedMenuItem } from "mui-nested-menu";
 
