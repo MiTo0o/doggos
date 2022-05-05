@@ -1,11 +1,18 @@
-# Getting Started with Create React App
+# Doggos
+Since I'm not in a position to own a dog, I found myself collecting dog photos from friends and family.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website was built to organize and display the dog photos in a gallery format.
 
-## Available Scripts
+---
+## Downloading photos
 
-In the project directory, you can run:
+See a photo you like on the website?
 
-### Galleries
+The photos on the website are all compressed, possibly cropped, and converted to webp format for faster loading times.
 
-All the gallery profiles have a profile picture with a 3:2 ratio
+Download the raw uncompressed photos [here](https://github.com/MiTo0o/doggos-raw-files-dump)
+
+---
+### notes
+
+- All the gallery profiles have a profile picture with a 3:2 ratio
