@@ -2,8 +2,10 @@ import React from "react";
 
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
+import InfoIcon from '@mui/icons-material/Info';
 import { Menu } from "@mui/material";
 import { NestedMenuItem } from "mui-nested-menu";
+
 // import { MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import { IconMenuItem } from "mui-nested-menu";
@@ -34,6 +36,13 @@ function NestedMenu() {
             onClick={handleClose}
             leftIcon={<HomeIcon />}
             label={"Home"}
+          />
+        </Link>
+        <Link to="/about" style={{ textDecoration: "none", color: "white" }}>
+          <IconMenuItem
+            onClick={handleClose}
+            leftIcon={<InfoIcon />}
+            label={"About"}
           />
         </Link>
         <NestedMenuItem
