@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
 #about-center-container {
-
   margin-bottom: 5%;
 
   #about-title {
@@ -14,17 +13,16 @@
   }
 
   .about-button-container {
-
     display: inline-block;
 
     .galleries-button {
       margin-left: 30px;
     }
-    
+
     .source-button {
       margin-left: 30px;
     }
-  
+
     button {
       padding: 15px 30px;
       font-size: 20px;
@@ -40,12 +38,10 @@
       border-radius: 290px;
       cursor: pointer;
     }
-  
+
     button:hover {
       color: #001f3f;
       background-color: #fff;
     }
   }
 }
-
-
