@@ -2,9 +2,10 @@
 
 Since I'm not in a position to own a dog, I found myself collecting dog photos from friends and family.
 
-This website was built to organize and display the dog photos in a gallery format.
----
+## This website was built to organize and display the dog photos in a gallery format.
+
 # https://doggos.derzan.dev
+
 ---
 
 ## Downloading photos
