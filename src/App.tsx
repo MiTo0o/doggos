@@ -1,6 +1,6 @@
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import paw from './assets/paw.svg';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import center from './assets/center.svg';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -15,20 +15,32 @@ function App() {
   return (
     <ThemeProvider theme={landingPageTheme}>
       <CssBaseline />
-      <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0} minHeight={160} direction='column'>
-            <Grid display="flex" justifyContent="center" alignItems="center">
-              <img 
-                src={paw} 
-                alt="paw-logo"
-                style={{height: 256, width: 256}}
-              />
-            </Grid>
-            <Grid display="flex" justifyContent="center" alignItems="center">
-                Doggos
-            </Grid>
-          </Grid>
-      </Box>
+      <Stack 
+        mt={15}
+        direction="column"
+        spacing={2}
+        justifyContent="center"
+        alignItems="center"
+      >
+        <img 
+          src={center} 
+          alt="paw-logo"
+          width={616}
+          height={336}
+        />
+        <Stack 
+          direction="column" 
+          spacing={3}
+        >
+          <Button variant="outlined" sx={{borderRadius: 28}} size='large'>
+            GALLERIES
+          </Button>
+          <Button variant="outlined" href="#outlined-buttons" sx={{borderRadius: 28}} size='large'>
+            About
+          </Button>
+        </Stack>
+      </Stack>
+
     </ThemeProvider>
 
   )
