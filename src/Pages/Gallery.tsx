@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import CssBaseline from '@mui/material/CssBaseline';
 
 function Gallery() {
-
     const landingPageTheme = createTheme({
         palette: {
           mode: 'dark',

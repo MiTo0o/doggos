@@ -13,3 +13,8 @@ export const profileData = [
     },
 ];
 
+export interface ProfileDataInterface {
+    title: string,
+    profilePicUrl: string
+}
+
