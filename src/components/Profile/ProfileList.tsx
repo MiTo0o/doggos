@@ -18,7 +18,7 @@ function ProfileList() {
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         {profileData.map((profile) => (
-          <ProfileCard {...profile} key={profile.title}/>
+          <ProfileCard {...profile} key={profile.title} />
         ))}
       </Grid>
     </>
