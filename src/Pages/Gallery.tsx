@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 // dog gallery info
@@ -43,14 +42,18 @@ function Gallery() {
       >
         {Elvis.title}
       </Typography>
-      <PhotoAlbum photos={Elvis.imgList} layout="masonry" onClick={({ index }) => setIndex(index)} />
+      <PhotoAlbum
+        photos={Elvis.imgList}
+        layout="masonry"
+        onClick={({ index }) => setIndex(index)}
+      />
       <Lightbox
-          slides={Elvis.imgList}
-          open={index >= 0}
-          index={index}
-          close={() => setIndex(-1)}
-          // // enable optional lightbox plugins
-          plugins={[Fullscreen, Slideshow]}
+        slides={Elvis.imgList}
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        // // enable optional lightbox plugins
+        plugins={[Fullscreen, Slideshow]}
       />
     </ThemeProvider>
   );

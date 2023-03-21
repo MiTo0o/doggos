@@ -11,25 +11,30 @@ import { Link } from "react-router-dom";
 function TopNav() {
   return (
     <AppBar position="static">
-        <Toolbar>
-            <NestedMenu />
-            <Typography
-            variant="h6"
-            sx={{
-                flexGrow: 1,
-                textAlign: "center",
-            }}
-            >
-                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-                    <img src={pawPrintLogo} className="App-logo" alt="paw-print-logo" style={{width: 53.3, height: 50}} />
-                </Link>
-            </Typography>
-            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-                <Button size="large" endIcon={<HomeIcon />} color="inherit">
-                    Home
-                </Button>
-            </Link>
-        </Toolbar>
+      <Toolbar>
+        <NestedMenu />
+        <Typography
+          variant="h6"
+          sx={{
+            flexGrow: 1,
+            textAlign: "center",
+          }}
+        >
+          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+            <img
+              src={pawPrintLogo}
+              className="App-logo"
+              alt="paw-print-logo"
+              style={{ width: 53.3, height: 50 }}
+            />
+          </Link>
+        </Typography>
+        <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <Button size="large" endIcon={<HomeIcon />} color="inherit">
+            Home
+          </Button>
+        </Link>
+      </Toolbar>
     </AppBar>
   );
 }

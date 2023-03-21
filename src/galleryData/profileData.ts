@@ -15,10 +15,10 @@ export const profileData = [
       "https://raw.githubusercontent.com/MiTo0o/doggos-static/main/Leo/profile.jpg",
   },
   {
-    title: 'Elvis',
+    title: "Elvis",
     profilePicUrl:
-      "https://raw.githubusercontent.com/MiTo0o/doggos-static/main/Elvis/profile.jpg"
-  }
+      "https://raw.githubusercontent.com/MiTo0o/doggos-static/main/Elvis/profile.jpg",
+  },
 ];
 
 export interface ProfileDataInterface {
