@@ -12,14 +12,13 @@ function Galleries() {
     },
   });
 
-  return(
+  return (
     <ThemeProvider theme={landingPageTheme}>
       <CssBaseline />
       <TopNav />
       <ProfileList />
     </ThemeProvider>
   );
-
 }
 
 export default Galleries;
