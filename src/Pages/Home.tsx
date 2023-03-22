@@ -5,8 +5,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import center from "../assets/center.svg";
-
 import { Link } from "react-router-dom";
+
+import { forwardRef } from "react";
+// Mui custom routing becuase wrapping the "ABOUT" button with the LINK react-router-dom component 
+// results in weird styling ;(
+const linkToAbout = forwardRef((props, ref) => <Link to={'about'} {...props} ref={ref as any}/>)
 
 function Home() {
   const landingPageTheme = createTheme({
@@ -43,19 +47,18 @@ function Home() {
               GALLERIES
             </Button>
           </Link>
-          <Link to={"about"}>
-            <Button
-              variant="outlined"
-              sx={{
-                borderRadius: 28,
-                color: "#607D8B",
-                borderColor: "#607D8B",
-              }}
-              size="large"
-            >
-              About
-            </Button>
-          </Link>
+          <Button
+            component={linkToAbout}
+            variant="outlined"
+            sx={{
+              borderRadius: 28,
+              color: "#607D8B",
+              borderColor: "#607D8B",
+            }}
+            size="large"
+          >
+            About
+          </Button>
         </Stack>
       </Stack>
     </ThemeProvider>

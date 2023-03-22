@@ -15,10 +15,10 @@ import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
 
 import { profileData } from "../galleryData/profileData";
 function NestedMenu() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState<EventTarget | null>(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event) => setAnchorEl(event.currentTarget);
+  const handleClick = (event) => setAnchorEl(event.currentTarget as EventTarget);
   const handleClose = () => setAnchorEl(null);
   return (
     <div>
