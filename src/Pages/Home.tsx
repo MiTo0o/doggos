@@ -17,7 +17,7 @@ const linkToAbout = forwardRef((props, ref) => (
 function Home() {
   const landingPageTheme = createTheme({
     palette: {
-      mode: "light",
+      mode: "dark",
       background: {
         default: "#1E272C",
       },
