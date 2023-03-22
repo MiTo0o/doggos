@@ -20,7 +20,10 @@ function TopNav() {
             textAlign: "center",
           }}
         >
-          <Link to={"galleries"} style={{ textDecoration: "none", color: "white" }}>
+          <Link
+            to={"galleries"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <img
               src={pawPrintLogo}
               alt="paw-print-logo"

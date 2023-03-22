@@ -1,7 +1,7 @@
 import ProfileList from "../components/Profile/ProfileList";
 
 function Galleries() {
-    return <ProfileList />
+  return <ProfileList />;
 }
 
-export default Galleries; 
+export default Galleries;
