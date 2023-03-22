@@ -14,7 +14,7 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 
 import { galleryDataInterface } from "../galleryData/allDogsData";
 
-function PhotoGrid({dogData}: {dogData: galleryDataInterface}) {
+function PhotoGrid({ dogData }: { dogData: galleryDataInterface }) {
   const [index, setIndex] = useState(-1);
   return (
     <>

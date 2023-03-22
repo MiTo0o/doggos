@@ -1,7 +1,6 @@
 import Home from "./Pages/Home";
-import Gallery from "./Pages/Gallery"
+import Gallery from "./Pages/Gallery";
 import Galleries from "./Pages/Galleries";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
