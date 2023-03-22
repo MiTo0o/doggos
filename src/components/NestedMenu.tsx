@@ -15,14 +15,18 @@ import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
 
 import { profileData } from "../galleryData/profileData";
 function NestedMenu() {
-  const [anchorEl, setAnchorEl] = React.useState<EventTarget | null>(null);
+  const [anchorEl, setAnchorEl] = React.useState<Element | null>(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event) =>
-    setAnchorEl(event.currentTarget as EventTarget);
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    setAnchorEl(event.currentTarget as Element);
+  }
+
   const handleClose = () => setAnchorEl(null);
   return (
     <div>
+      {/* ts forcing href tag on button*/}
+      {/* @ts-ignore */}
       <Button
         size="large"
         onClick={handleClick}
@@ -51,12 +55,13 @@ function NestedMenu() {
           label={"Galleries"}
           parentMenuOpen={open}
         >
-          {profileData.map((dog) => {
+          {profileData.map((dog, index) => {
             const relativeLinkUrl = `/gallery/${dog.title}`;
             return (
               <Link
                 to={relativeLinkUrl}
                 style={{ textDecoration: "none", color: "white" }}
+                key={dog.title + index}
               >
                 <IconMenuItem
                   onClick={handleClose}
