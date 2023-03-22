@@ -8,6 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* redirect to home page if route can't be resolved */}
         <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/gallery/:galleryName" element={<Gallery />} />
