@@ -38,8 +38,8 @@ function Home() {
         <img
           src={center}
           alt="paw-logo"
-          width={616}
-          height={336}
+          width={407}
+          height={300}
           style={{ overflow: "visible" }}
         />
         <Stack direction="column" spacing={3}>
