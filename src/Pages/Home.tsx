@@ -35,12 +35,7 @@ function Home() {
         alignItems="center"
         style={{ minWidth: "100vw" }}
       >
-        <img
-          src={center}
-          alt="paw-logo"
-          width={407}
-          height={300}
-        />
+        <img src={center} alt="paw-logo" width={407} height={300} />
         <Stack direction="column" spacing={3}>
           <Link to="/galleries" style={{ textDecoration: "none" }}>
             <Button
