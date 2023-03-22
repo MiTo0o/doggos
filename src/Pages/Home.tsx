@@ -21,13 +21,13 @@ function Home() {
       <Stack
         mt={15}
         direction="column"
-        spacing={2}
+        spacing={7}
         justifyContent="center"
         alignItems="center"
       >
         <img src={center} alt="paw-logo" width={616} height={336} />
         <Stack direction="column" spacing={3}>
-          <Link to={"gal"} style={{ textDecoration: "none" }}>
+          <Link to={"galleries"} style={{ textDecoration: "none" }}>
             <Button
               variant="outlined"
               sx={{

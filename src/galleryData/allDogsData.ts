@@ -9,3 +9,12 @@ export const allGalleriesData = {
   Leo,
   Elvis,
 };
+
+export interface galleryDataInterface {
+  title: string;
+  imgList: {
+    src: string;
+    width: number;
+    height: number;
+  }[]
+}
