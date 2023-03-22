@@ -30,6 +30,8 @@ function ProfileCard(profileData: ProfileDataInterface) {
           }}
           component="img"
           image={profileData.profilePicUrl}
+          decoding='async'
+          loading="lazy"
         />
         <CardContent>
           <Typography
