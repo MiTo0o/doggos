@@ -33,8 +33,9 @@ function Home() {
         spacing={7}
         justifyContent="center"
         alignItems="center"
+        style={{ minWidth: "100vw" }}
       >
-        <img src={center} alt="paw-logo" width={616} height={336} />
+        <img src={center} alt="paw-logo" width={616} height={336} style={{overflow: 'visible'}}/>
         <Stack direction="column" spacing={3}>
           <Link to="/galleries" style={{ textDecoration: "none" }}>
             <Button
