@@ -18,6 +18,7 @@ function Gallery() {
   const typedGalleryName = galleryName as keyof typeof allGalleriesData;
 
   if (Object.hasOwn(allGalleriesData, galleryName)) {
+
     const landingPageTheme = createTheme({
       palette: {
         mode: "dark",
@@ -26,6 +27,7 @@ function Gallery() {
         },
       },
     });
+    
     return (
       <ThemeProvider theme={landingPageTheme}>
         <CssBaseline />

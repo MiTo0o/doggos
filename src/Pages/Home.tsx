@@ -11,7 +11,7 @@ import { forwardRef } from "react";
 // Mui custom routing becuase wrapping the "ABOUT" button with
 // the LINK react-router-dom component results in weird styling ;(
 const linkToAbout = forwardRef((props, ref) => (
-  <Link to={"about"} {...props} ref={ref as any} />
+  <Link to="/about" {...props} ref={ref as any} />
 ));
 
 function Home() {
@@ -36,7 +36,7 @@ function Home() {
       >
         <img src={center} alt="paw-logo" width={616} height={336} />
         <Stack direction="column" spacing={3}>
-          <Link to={"galleries"} style={{ textDecoration: "none" }}>
+          <Link to="/galleries" style={{ textDecoration: "none" }}>
             <Button
               variant="outlined"
               sx={{

@@ -21,7 +21,7 @@ function TopNav() {
           }}
         >
           <Link
-            to={"galleries"}
+            to="/galleries"
             style={{ textDecoration: "none", color: "white" }}
           >
             <img
