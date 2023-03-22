@@ -16,5 +16,5 @@ export interface galleryDataInterface {
     src: string;
     width: number;
     height: number;
-  }[]
+  }[];
 }
