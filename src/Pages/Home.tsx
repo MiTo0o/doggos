@@ -40,7 +40,6 @@ function Home() {
           alt="paw-logo"
           width={407}
           height={300}
-          style={{ overflow: "visible" }}
         />
         <Stack direction="column" spacing={3}>
           <Link to="/galleries" style={{ textDecoration: "none" }}>
