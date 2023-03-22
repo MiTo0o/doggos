@@ -32,7 +32,12 @@ function ProfileCard(profileData: ProfileDataInterface) {
           image={profileData.profilePicUrl}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2" sx={{color: '#607D8B'}}>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="h2"
+            sx={{ color: "#607D8B" }}
+          >
             {profileData.title}
           </Typography>
         </CardContent>
@@ -43,8 +48,8 @@ function ProfileCard(profileData: ProfileDataInterface) {
               size="large"
               endIcon={<CollectionsIcon />}
               sx={{
-                color: '#009688',
-                borderColor: '#009688'
+                color: "#009688",
+                borderColor: "#009688",
               }}
             >
               View Gallery
