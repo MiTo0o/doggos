@@ -1,9 +1,13 @@
+// MUI theme
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import center from "../assets/center.svg";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+
 import { Link } from "react-router-dom";
-import CssBaseline from "@mui/material/CssBaseline";
 
 function Home() {
   const landingPageTheme = createTheme({
@@ -40,18 +44,19 @@ function Home() {
               GALLERIES
             </Button>
           </Link>
-          <Button
-            variant="outlined"
-            href="#outlined-buttons"
-            sx={{
-              borderRadius: 28,
-              color: "#607D8B",
-              borderColor: "#607D8B",
-            }}
-            size="large"
-          >
-            About
-          </Button>
+          <Link to={"about"}>
+            <Button
+              variant="outlined"
+              sx={{
+                borderRadius: 28,
+                color: "#607D8B",
+                borderColor: "#607D8B",
+              }}
+              size="large"
+            >
+              About
+            </Button>
+          </Link>
         </Stack>
       </Stack>
     </ThemeProvider>
