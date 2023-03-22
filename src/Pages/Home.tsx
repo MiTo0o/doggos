@@ -8,9 +8,11 @@ import center from "../assets/center.svg";
 import { Link } from "react-router-dom";
 
 import { forwardRef } from "react";
-// Mui custom routing becuase wrapping the "ABOUT" button with the LINK react-router-dom component 
+// Mui custom routing becuase wrapping the "ABOUT" button with the LINK react-router-dom component
 // results in weird styling ;(
-const linkToAbout = forwardRef((props, ref) => <Link to={'about'} {...props} ref={ref as any}/>)
+const linkToAbout = forwardRef((props, ref) => (
+  <Link to={"about"} {...props} ref={ref as any} />
+));
 
 function Home() {
   const landingPageTheme = createTheme({
