@@ -19,7 +19,7 @@ function NestedMenu() {
   const open = Boolean(anchorEl);
 
   const handleClick = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
   ) => {
     setAnchorEl(event.currentTarget as Element);
   };
