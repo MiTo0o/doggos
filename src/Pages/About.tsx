@@ -22,6 +22,20 @@ function About() {
         default: "#1E272C",
       },
     },
+    typography: {
+      h6: {
+        fontSize: "1.25rem",
+        [`@media (max-width:600px)`]: {
+          fontSize: "1rem",
+        },
+      },
+      body1: {
+        fontSize: "1rem",
+        [`@media (max-width:600px)`]: {
+          fontSize: "0.875rem",
+        },
+      },
+    },
   });
 
   return (
@@ -32,9 +46,9 @@ function About() {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        style={{ minHeight: "100vh" }}
+        style={{ minHeight: "100vh", padding: "0 20px" }}
       >
-        <Grid item>
+        <Grid item xs={12} sm={10} md={8}>
           <Typography align="center" variant="h6" pb={3}>
             Welcome to my dog gallery website!
           </Typography>
