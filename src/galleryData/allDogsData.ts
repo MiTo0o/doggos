@@ -13,7 +13,7 @@ export const allGalleriesData = {
   Elvis,
   Rufus,
   Sesame,
-  "Assorted Doggos": Assorted
+  "Assorted Doggos": Assorted,
 };
 
 export interface galleryDataInterface {
