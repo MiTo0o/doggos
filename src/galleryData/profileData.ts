@@ -19,6 +19,21 @@ export const profileData = [
     profilePicUrl:
       "https://raw.githubusercontent.com/MiTo0o/doggos-static/main/Elvis/profile.webp",
   },
+  {
+    title: "Rufus",
+    profilePicUrl:
+      "https://raw.githubusercontent.com/MiTo0o/doggos-static/main/Rufus/profile.webp",
+  },
+  {
+    title: "Sesame",
+    profilePicUrl:
+      "https://raw.githubusercontent.com/MiTo0o/doggos-static/main/Sesame/profile.webp",
+  },
+  {
+    title: "Assorted Doggos",
+    profilePicUrl:
+      "https://raw.githubusercontent.com/MiTo0o/doggos-static/main/Assorted/profile.webp",
+  },
 ];
 
 export interface ProfileDataInterface {
